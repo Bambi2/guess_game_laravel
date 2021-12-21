@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e05263;
+  font: 400 1rem 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-self: flex-start;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #340068;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 14px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #e05263;
+  background-color: #ffffff;
+}
+
+#clicked {
+  color: #e05263;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-hidden {
+  display: none;
+}
+
+.form,
+.game-area,
+.profile-area,
+.leaderboard-area {
+  width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  background-color: #ffcf99;
+}
+
+.form-title,
+.game-word,
+.game-score,
+.profile-stat,
+.profile-name {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-score {
+  font-family: 'Roboto', sans-serif;
+  color: #340068;
+}
+
+.form-message {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #e05263;
+  font-weight: 700;
+}
+
+.form-input-error-message {
+  color: #e05263;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.form-input-group,
+.game-input-area {
+  margin-bottom: 1rem;
+}
+
+.form-input,
+.game-input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 3px solid #ffffff;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.game-input,
+.game-word {
+  text-transform: lowercase;
+}
+
+.form-input:focus {
+  border-color: #6b717e;
+}
+
+.form-button,
+.game-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #340068;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #5200a3;
+}
+
+.game-button:hover {
+  background-color: #5200a3;
+}
+
+.game-button:active {
+  vertical-align: top;
+  padding: 0.98rem 1.98rem;
+}
+
+.form-button:active {
+  vertical-align: top;
+  padding: 8px 13px 6px;
+}
+
+.form-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-link {
+  color: #340068;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.leaderboard-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-five-table {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.top-five-table td {
+  padding: 1rem 2rem;
+}
+
